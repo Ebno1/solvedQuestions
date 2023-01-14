@@ -1,0 +1,10 @@
+def insertionSort1(n, x):
+    j=n-1
+    t=x[j]
+    while x[j] < x[j-1] and j>0:
+        t=x[j]
+        x[j]=x[j-1]
+        print(*x)
+        x[j-1]=t
+        j-=1
+    print(*x)
