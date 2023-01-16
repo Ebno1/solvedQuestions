@@ -1,0 +1,12 @@
+def gradingStudents(grades):
+    li=[]
+    for grade in grades:
+        if grade<38:
+            li.append(grade)
+            continue
+        mod=math.ceil(grade/5)*5
+        if mod-grade <3:
+            li.append(mod)
+        else:
+            li.append(grade)
+    return li 
