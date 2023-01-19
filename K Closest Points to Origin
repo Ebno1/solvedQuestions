@@ -1,0 +1,5 @@
+  def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+      for i in points:
+          i.insert(0, (pow(i[0],2)+pow(i[1],2))**0.5)
+      points=sorted(points)
+      return [points[i][1:] for i in range(k)]
